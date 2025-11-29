@@ -1,0 +1,67 @@
+[
+  
+  {
+    "title": "Hello world!",
+    "url": "/posts/intro/",
+    "categories": "myself",
+    "tags": "general",
+    "date": "2025-11-29 13:00:00 +0100",
+    "content": "Yesterday evening I saw a commercial for a web hosting provider and, for a moment, I wondered whether I really needed a website. Of course, the honest answer is: no one needs a personal website. But something in me kept nudging: “You’ve wanted to share what you’re learning for a long time. Maybe it’s finally time.”  So… here we are.  I’m a curious person by nature—probably to a fault—and over the years I’ve collected little pockets of knowledge from many corners: programming, data science, the energy domain, process modelling, investing in the stock market, philosophy, the way we learn, and, naturally, the truly important things in life—like cats.  This website will be my digital home base. A place where I can share what I’m working on, explain things I’ve learned, document confusing-but-interesting rabbit holes, and maybe even write about ideas that are still half-formed.  To start, you’ll see posts related to my master’s thesis: background on the austrian energy market, technical details, and the things I wish someone had told me earlier. But over time, I hope this little space grows into a broader reflection of who I am.  Let’s see where this goes."
+  },
+  
+  {
+    "title": "BESS Optimization",
+    "url": "/posts/impl-opt/",
+    "categories": "Energy, thesis project optimization",
+    "tags": "thesis",
+    "date": "2025-11-29 05:00:00 +0100",
+    "content": ""
+  },
+  
+  {
+    "title": "BESS Integration in the energy market",
+    "url": "/posts/background-bessmarket/",
+    "categories": "Energy, BESS, Market Integration",
+    "tags": "thesis",
+    "date": "2025-11-29 04:00:00 +0100",
+    "content": ""
+  },
+  
+  {
+    "title": "BESS - Battery Energy Storage Systems",
+    "url": "/posts/background-bess/",
+    "categories": "Energy, BESS, Definition",
+    "tags": "thesis",
+    "date": "2025-11-29 04:00:00 +0100",
+    "content": ""
+  },
+  
+  {
+    "title": "Wholesale Electricity Markets",
+    "url": "/posts/background-markets/",
+    "categories": "Energy, Elecricity Markets",
+    "tags": "thesis",
+    "date": "2025-11-29 03:00:00 +0100",
+    "content": ""
+  },
+  
+  {
+    "title": "Organization of Austria's Power Sector",
+    "url": "/posts/background/",
+    "categories": "Energy, Power sector",
+    "tags": "thesis",
+    "date": "2025-11-29 02:00:00 +0100",
+    "content": ""
+  },
+  
+  {
+    "title": "Shapes",
+    "url": "/posts/shapes/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-11-29 00:00:00 +0100",
+    "content": ""
+  }
+  
+]
+
