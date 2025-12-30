@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
   <title>Magdalena Breitenauer</title>
-  <subtitle>A blog about my professional experiences and personal interests.</subtitle>
-  <updated>2025-11-29T21:54:48+01:00</updated>
+  <subtitle>A digital garden.</subtitle>
+  <updated>2025-12-30T17:45:42+01:00</updated>
   <author>
     <name>Magdalena Breitenauer</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,80 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Veganes Apfel-Tiramisu</title>
+    <link href="http://localhost:4000/posts/tiramisu/" rel="alternate" type="text/html" title="Veganes Apfel-Tiramisu" />
+    <published>2025-11-30T10:00:00+01:00</published>
+  
+    <updated>2025-11-30T10:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/tiramisu/</id>
+    <content type="text/html" src="http://localhost:4000/posts/tiramisu/" />
+    <author>
+      <name>Magdalena</name>
+    </author>
+
+  
+    
+    <category term="Rezepte" />
+    
+    <category term="Vegane Desserts" />
+    
+  
+
+  <summary>Rezept für Apfel-Tiramisu mit karamellisierten Zimt-Apfelwürfeln</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Vegane Albóndigas</title>
+    <link href="http://localhost:4000/posts/albondigas/" rel="alternate" type="text/html" title="Vegane Albóndigas" />
+    <published>2025-11-30T10:00:00+01:00</published>
+  
+    <updated>2025-11-30T10:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/albondigas/</id>
+    <content type="text/html" src="http://localhost:4000/posts/albondigas/" />
+    <author>
+      <name>Magdalena</name>
+    </author>
+
+  
+    
+    <category term="Rezepte" />
+    
+    <category term="Vegane Hauptgerichte" />
+    
+  
+
+  <summary>Rezept für Albóndigas</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Ueberbackene Gnochi</title>
+    <link href="http://localhost:4000/posts/ueberbackene-gnochi/" rel="alternate" type="text/html" title="Ueberbackene Gnochi" />
+    <published>2025-11-30T00:00:00+01:00</published>
+  
+    <updated>2025-11-30T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/ueberbackene-gnochi/</id>
+    <content type="text/html" src="http://localhost:4000/posts/ueberbackene-gnochi/" />
+    <author>
+      <name>Magdalena Breitenauer</name>
+    </author>
+
+  
+    
+  
+
+  <summary></summary>
+
+  </entry>
 
   
   <entry>
@@ -34,119 +108,13 @@
 
   
     
-    <category term="myself" />
+    <category term="Myself" />
+    
+    <category term="01 - Announcements" />
     
   
 
-  <summary>Introduction. The start of my blogger area?</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>BESS Optimization</title>
-    <link href="http://localhost:4000/posts/impl-opt/" rel="alternate" type="text/html" title="BESS Optimization" />
-    <published>2025-11-29T05:00:00+01:00</published>
-  
-    <updated>2025-11-29T05:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/impl-opt/</id>
-    <content type="text/html" src="http://localhost:4000/posts/impl-opt/" />
-    <author>
-      <name>Magdalena</name>
-    </author>
-
-  
-    
-    <category term="Energy" />
-    
-    <category term="thesis project optimization" />
-    
-  
-
-  <summary>Content stems from my master thesis.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>BESS Integration in the energy market</title>
-    <link href="http://localhost:4000/posts/background-bessmarket/" rel="alternate" type="text/html" title="BESS Integration in the energy market" />
-    <published>2025-11-29T04:00:00+01:00</published>
-  
-    <updated>2025-11-29T04:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/background-bessmarket/</id>
-    <content type="text/html" src="http://localhost:4000/posts/background-bessmarket/" />
-    <author>
-      <name>Magdalena</name>
-    </author>
-
-  
-    
-    <category term="Energy" />
-    
-    <category term="BESS" />
-    
-    <category term="Market Integration" />
-    
-  
-
-  <summary>Content stems from my master thesis.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>BESS - Battery Energy Storage Systems</title>
-    <link href="http://localhost:4000/posts/background-bess/" rel="alternate" type="text/html" title="BESS - Battery Energy Storage Systems" />
-    <published>2025-11-29T04:00:00+01:00</published>
-  
-    <updated>2025-11-29T04:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/background-bess/</id>
-    <content type="text/html" src="http://localhost:4000/posts/background-bess/" />
-    <author>
-      <name>Magdalena</name>
-    </author>
-
-  
-    
-    <category term="Energy" />
-    
-    <category term="BESS" />
-    
-    <category term="Definition" />
-    
-  
-
-  <summary>Content stems from my master thesis.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Wholesale Electricity Markets</title>
-    <link href="http://localhost:4000/posts/background-markets/" rel="alternate" type="text/html" title="Wholesale Electricity Markets" />
-    <published>2025-11-29T03:00:00+01:00</published>
-  
-    <updated>2025-11-29T03:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/background-markets/</id>
-    <content type="text/html" src="http://localhost:4000/posts/background-markets/" />
-    <author>
-      <name>Magdalena</name>
-    </author>
-
-  
-    
-    <category term="Energy" />
-    
-    <category term="Elecricity Markets" />
-    
-  
-
-  <summary>Content stems from my master thesis.</summary>
+  <summary>Is this the start of my blogger area?</summary>
 
   </entry>
 

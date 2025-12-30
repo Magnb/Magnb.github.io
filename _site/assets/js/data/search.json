@@ -1,66 +1,39 @@
 [
   
   {
-    "title": "Hello world!",
-    "url": "/posts/intro/",
-    "categories": "myself",
-    "tags": "general",
-    "date": "2025-11-29 13:00:00 +0100",
-    "content": "Yesterday evening I saw a commercial for a web hosting provider and, for a moment, I wondered whether I really needed a website. Of course, the honest answer is: no one needs a personal website. But something in me kept nudging: “You’ve wanted to share what you’re learning for a long time. Maybe it’s finally time.”  So… here we are.  I’m a curious person by nature—probably to a fault—and over the years I’ve collected little pockets of knowledge from many corners: programming, data science, the energy domain, process modelling, investing in the stock market, philosophy, the way we learn, and, naturally, the truly important things in life—like cats.  This website will be my digital home base. A place where I can share what I’m working on, explain things I’ve learned, document confusing-but-interesting rabbit holes, and maybe even write about ideas that are still half-formed.  To start, you’ll see posts related to my master’s thesis: background on the austrian energy market, technical details, and the things I wish someone had told me earlier. But over time, I hope this little space grows into a broader reflection of who I am.  Let’s see where this goes."
+    "title": "Veganes Apfel-Tiramisu",
+    "url": "/posts/tiramisu/",
+    "categories": "Rezepte, Vegane Desserts",
+    "tags": "de",
+    "date": "2025-11-30 10:00:00 +0100",
+    "content": "Veganes Apfel-Tiramisu mit karamellisierten Zimt-Apfelwürfeln  Vorbereitung    30.12. abends: Apfelmus + karamellisierte Apfelwürfel zubereiten   31.12. vormittags oder mittags: Creme rühren &amp; Dessert schichten   Tipp: Abends ist das Dessert perfekt durchgezogen &amp; aromatisch ✨    Zutaten (8–10 Portionen)  Selbstgemachtes Apfelmus    1 kg Äpfel (z. B. Elstar, Boskoop, Braeburn)   80–120 ml Wasser oder Apfelsaft   1–2 EL Zitronensaft   1 TL Zimt   Optional: 1 Päckchen Vanillezucker   Optional: 1–2 EL Zucker oder Ahornsirup (nach Geschmack)   Karamellisierte Apfelwürfel    4–5 Äpfel   40 g vegane Butter oder Margarine   3–4 EL brauner Zucker oder Kokosblütenzucker   1–1½ TL Zimt   Optional: 1 Prise Vanille oder Tonkabohne   Vegane Creme    500 g veganer Mascarpone oder (leichtere Variante):   300 g veganer Skyr/Joghurt (Soja oder Mandel)   200 g veganer Frischkäse (für mehr Stabilität)   300 ml vegane Schlagcreme (z. B. Rama, Schlagfix, Alpro)   2 Päckchen Sahnesteif (vegan) oder San-apart   60–90 g Puderzucker   1½ TL Zimt   Optional: etwas Vanilleextrakt   Weitere Schichten    200–250 g vegane Spekulatius oder vegane Butterkekse / Löffelbiskuits   ca. 100 ml Apfelsaft oder Apfelpunsch (zum Tränken)     Zubereitung  1) Veganes Apfelmus selbst machen    Äpfel schälen, entkernen und würfeln.   Mit Wasser/Apfelsaft, Zitronensaft, Zimt &amp; ggf. Zucker in einen Topf geben.   Zugedeckt bei mittlerer Hitze 15–20 Min. weich köcheln.   Fein pürieren oder stückig lassen – je nach Geschmack.   Komplett abkühlen lassen.   Hinweis: Hält 3–4 Tage im Kühlschrank — ideal zum Vorbereiten.  2) Karamellisierte Apfelwürfel    Apfelwürfel in gleichmäßige Stücke schneiden.   Vegane Butter schmelzen, Zucker &amp; Zimt einrühren.   Apfelwürfel darin 8–10 Min. goldbraun karamellisieren (nicht zu weich braten).   Vom Herd ziehen &amp; abkühlen lassen.   Extra-Tipp: Die Würfel sollten noch etwas Struktur behalten, damit sie im Dessert nicht zerfallen.  3) Vegane Creme    Veganen Mascarpone (oder Joghurt-/Frischkäse-Mix) mit Puderzucker &amp; Zimt glatt rühren.   Vegane Sahne mit Sahnesteif sehr steif schlagen.   Sahne vorsichtig unterheben, sodass die Creme luftig und standfest bleibt.   Tipp: Lieber etwas fester als zu weich rühren — so hält das Tiramisu besser.  4) Schichten In einer Auflaufform oder in Dessertgläsern schichten:    Kekse kurz mit Apfelsaft/Punsch tränken (nicht durchnässen).   Eine Schicht Apfelmus darauf verteilen.   Eine Schicht vegane Creme darauf geben.   Einige karamellisierte Apfelwürfel einstreuen.   Wiederhole die Schichten mindestens zweimal und schließe mit einer Creme-Schicht ab.  5) Kühlen    Mindestens 4–6 Stunden kühlen   Optimal: über Nacht (Geschmack &amp; Konsistenz werden besser)     Optionale Ergänzungen &amp; Variationen    Vegane Karamellsauce über die oberste Schicht   Geröstete Mandeln oder Haselnüsse   Knusprige Spekulatiusbrösel erst kurz vor dem Servieren   Prise Lebkuchengewürz für intensive Aromen   1–2 EL Apfelbrand / Amaretto (vegan) in die Apfelschicht   Etwas Orangenabrieb in die Creme für Frische     Haltbarkeit    Gekühlt 2–3 Tage   Ideal zum Vorbereiten"
   },
   
   {
-    "title": "BESS Optimization",
-    "url": "/posts/impl-opt/",
-    "categories": "Energy, thesis project optimization",
-    "tags": "thesis",
-    "date": "2025-11-29 05:00:00 +0100",
-    "content": ""
+    "title": "Vegane Albóndigas",
+    "url": "/posts/albondigas/",
+    "categories": "Rezepte, Vegane Hauptgerichte",
+    "tags": "de",
+    "date": "2025-11-30 10:00:00 +0100",
+    "content": "🍅 Vegetarische / Vegane Albóndigas    Foto: Apfel-Tiramisu mit karamellisierten Zimt-Apfelwürfeln.  Zutaten (für ca. 4 Portionen / ~ 12 – 16 Bällchen)  Für die Bällchen: \t•\t500 g pflanzliches Hack (z. B. “myvay” oder anderes veganes Hack)  ￼ \t•\t1 kleine Zwiebel, fein gehackt  ￼ \t•\t2–3 Knoblauchzehen, fein gehackt  ￼ \t•\t2 EL Paniermehl (oder Semmelbrösel bzw. glutenfrei: Paniermehl-Ersatz)  ￼ \t•\tca. ½ Bund frische Petersilie, fein gehackt \t•\toptional: 20 g gehackte &amp; geröstete Pinienkerne – das gibt einen schönen Biss und Geschmack.  ￼ \t•\tGewürze: 1 TL edelsüßes Paprikapulver, Salz, Pfeffer; optional eine Prise Kreuzkümmel (für ein kleines Aroma-Extra).  ￼ \t•\tOlivenöl zum Anbraten.  ￼  Für die Tomatensauce: \t•\t500 g frische Tomaten (hochreif) oder eine gute Dose stückiger Tomaten.  ￼ \t•\t2 EL Tomatenmark (um die Sauce intensiver zu machen)  ￼ \t•\t1 Zwiebel, fein gehackt  ￼ \t•\t2 Knoblauchzehen, fein gehackt  ￼￼ \t•\t50 ml trockener Rotwein (gibt Geschmackstiefe) \t•\tevtl. 1 Lorbeerblatt \t•\tevtl. 1 TL frischer Thymian oder getrockneter Thymian (alternativ mediterrane Kräuter wie Oregano/Thymian)  \t•\tevtl. 1 TL Zucker (balanciert die Säure der Tomaten)  ￼ \t•\tSalz, Pfeffer, Olivenöl zum Anbraten.  ￼  Zubereitung \t1.\tBällchen vorbereiten: \t•\tZwiebel und Knoblauch fein hacken, Petersilie ebenfalls klein schneiden. \t•\tIn einer großen Schüssel das vegane Hack mit Zwiebel, Knoblauch, Petersilie, Paniermehl (und optional Pinienkerne) gut vermengen. Paprikapulver, Salz, Pfeffer (und optional Kreuzkümmel) einarbeiten. Mit den Händen ca. 12 – 16 gleichmäßige Bällchen formen.  ￼ \t•\tTipp: Wenn du willst, kannst du die Bällchen leicht in Mehl wälzen — das hilft, dass sie nach dem Anbraten in der Sauce schön Form behalten und nicht zerfallen.  ￼ \t2.\tAnbraten: \t•\tIn einer Pfanne etwas Olivenöl erhitzen. Die Albóndigas rundum anbraten, bis sie schön gebräunt sind. Sie müssen nicht komplett durchgegart sein — sie garen später in der Sauce fertig.  ￼ \t3.\tTomatensauce zubereiten: \t•\tIn derselben oder einer zweiten Pfanne etwas Olivenöl erhitzen. Zwiebel und Knoblauch glasig dünsten. Wenn du Chili nutzt: hinzufügen und kurz mitrösten. Dann das Tomatenmark kurz mitrösten.  ￼ \t•\tMit Rotwein ablöschen (oder Gemüsebrühe/Wasser). Die Tomaten (oder Dosentomaten) zugeben, Kräuter und Lorbeerblatt einlegen, Salz, Pfeffer, Zucker dazu. Alles ca. 15–20 Minuten bei mittlerer Hitze köcheln lassen, bis die Sauce schön eingedickt ist.  ￼ \t•\tWer mag: Sauce am Ende etwas pürieren, damit sie sämiger wird (optional). \t4.\tBällchen fertig garen: \t•\tDie angebratenen Albóndigas vorsichtig in die fertige Tomatensauce geben. Bei niedriger Hitze weitere 5–10 Minuten mitköcheln lassen, damit sie die Aromen aufnehmen und durchziehen können.  ￼ \t•\tLorbeerblatt entfernen. Abschmecken und ggf. nachwürzen. \t5.\tServieren: \t•\tMit frisch gehackter Petersilie bestreuen. \t•\tDazu passen wunderbar Baguette, rustikales Brot, Reis oder auch etwas grüner Salat. Als kleine Tapas mit Oliven und Brot — perfekt.  ￼  ---   Hinweise zur Bildgröße &amp; Vorschau    Bild: albondigas.jpeg liegt im selben Ordner wie dieser Post. Wenn das Theme Bildgrößen skaliert, kannst du eine kleinere, optimierte Version (z. B. 1200px Breite) in den gleichen Ordner legen.   Optionales CSS (in assets/css oder deinem Theme-Overrides), um das Bild zu zentrieren und max-Breite zu begrenzen:   .post-image--center {   display: block;   margin: 0.75rem auto;   max-width: 900px;   width: 100%;   height: auto; }   Füge dann die Klasse zur Bild-Markdown-Zeile hinzu, falls dein Parser HTML im Markdown erlaubt:  &lt;img src=\"./albondigas.jpeg\" alt=\"Apfel-Tiramisu\" class=\"post-image--center\"&gt;   Lokale Vorschau (zsh / macOS):  # Installiere Gems falls nötig: bundle install # Dann lokal starten: bundle exec jekyll serve --livereload   Wenn du möchtest, optimiere ich das Bild noch (Größe/Qualität) oder füge die CSS-Datei hinzu."
   },
   
   {
-    "title": "BESS Integration in the energy market",
-    "url": "/posts/background-bessmarket/",
-    "categories": "Energy, BESS, Market Integration",
-    "tags": "thesis",
-    "date": "2025-11-29 04:00:00 +0100",
-    "content": ""
-  },
-  
-  {
-    "title": "BESS - Battery Energy Storage Systems",
-    "url": "/posts/background-bess/",
-    "categories": "Energy, BESS, Definition",
-    "tags": "thesis",
-    "date": "2025-11-29 04:00:00 +0100",
-    "content": ""
-  },
-  
-  {
-    "title": "Wholesale Electricity Markets",
-    "url": "/posts/background-markets/",
-    "categories": "Energy, Elecricity Markets",
-    "tags": "thesis",
-    "date": "2025-11-29 03:00:00 +0100",
-    "content": ""
-  },
-  
-  {
-    "title": "Organization of Austria's Power Sector",
-    "url": "/posts/background/",
-    "categories": "Energy, Power sector",
-    "tags": "thesis",
-    "date": "2025-11-29 02:00:00 +0100",
-    "content": ""
-  },
-  
-  {
-    "title": "Shapes",
-    "url": "/posts/shapes/",
+    "title": "Ueberbackene Gnochi",
+    "url": "/posts/ueberbackene-gnochi/",
     "categories": "",
     "tags": "",
-    "date": "2025-11-29 00:00:00 +0100",
+    "date": "2025-11-30 00:00:00 +0100",
     "content": ""
+  },
+  
+  {
+    "title": "Hello world!",
+    "url": "/posts/intro/",
+    "categories": "Myself, 01 - Announcements",
+    "tags": "general",
+    "date": "2025-11-29 13:00:00 +0100",
+    "content": "Yesterday evening I saw a commercial for a web hosting provider and, for a moment, I wondered whether I really needed a website. Of course, the honest answer is: no one needs a personal website. But something in me kept nudging: “You’ve wanted to share what you’re learning for a long time. Maybe it’s finally time.” I knew I could use Github Pages to host a static website for free and wanted to try that for a while anyway. So… here we are.  I’m a curious person by nature—probably to a fault—and over the years I’ve collected little pockets of knowledge from many corners: programming, data science, the energy domain, process modelling, investing in the stock market, philosophy, the way we learn, and, naturally, the truly important things in life—like cats or baking delicious Vanillekipferl.  This website will be my digital home base. A place where I can share what I’m working on, explain things I’ve learned, document confusing-but-interesting rabbit holes, and maybe even write about ideas that are still half-formed. I have a lot of interests but tend to forget about things again from time to time, so this place here might help me keep track of some things.  To start, you’ll see posts related to my master’s thesis: background on the austrian energy market, technical details, and some things I wish someone had told me earlier. But over time, I hope this little space grows into a broader reflection of who I am. I want to use it as a place where I can share chunks of knowledge.  Let’s see where this goes."
   }
   
 ]

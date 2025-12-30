@@ -1,0 +1,129 @@
+---
+title: BESS - Battery Energy Storage Systems
+description: Content stems from my master thesis.
+author: Magdalena
+date: 2025-11-30 11:00:00 
+categories: [Energy, 03 - BESS]
+tags: [thesis]
+---
+
+<!-- 
+# Battery Energy Storage Systems
+
+## Definition of BESS
+
+Battery Energy Storage Systems (BESS) are rechargeable electrochemical systems that store and release electricity through controlled charge-discharge cycles. 
+The increased dependence on non-dispatchable RES has created a pressing need for flexible, fast-responding assets. Positioned at the core of modern grid flexibility, BESS address this need by enabling the integration of variable RES, supporting grid stability, and participating in electricity markets through energy arbitrage and ancillary services \cite{linnemann2024}.
+
+This work focuses on large-scale BESS, defined here as systems with capacities of at least 5~MWh that are designed for direct participation in wholesale electricity markets. 
+
+More broadly, energy storage technologies are categorized as either primary or secondary systems based on their operational reusability. Primary storage systems, such as fossil fuel reserves or natural hydro reservoirs, provide energy once and are inherently finite. In contrast, secondary storage systems — including batteries, pumped hydro, and compressed air — are designed for repeated cycling, making them suitable for ongoing grid operations and market participation \cite{wawer2022a}.
+
+BESS are further classified by their storage medium (e.g., lithium-ion, flow, or sodium-sulfur chemistries) and by discharge duration, which reflects the energy-to-power ratio and defines their suitability for different applications—ranging from fast-response frequency regulation to long-duration energy shifting \cite{song2024}. Sectorally, BESS typically operate within the electricity domain, but may also support cross-sectoral applications when integrated with technologies such as power-to-heat or power-to-gas systems \cite{linnemann2024}.
+
+A typical BESS consists of three core subsystems \cite{song2024}:
+
+- The battery module, which stores energy through reversible chemical processes.
+- The power conversion system, which manages alternating current/direct current (AC/DC) conversions and enables grid interfacing.
+- The battery management and control system, which monitors operational parameters and executes optimal charging and discharging decisions across control intervals.
+
+Together, these components form a flexible and modular system capable of supporting a wide range of applications in centralized and distributed energy systems. The following subsections explore the dominant and emerging BESS technologies, their technical performance characteristics, and their integration into energy markets.
+
+## BESS Technologies
+Electrochemical battery storage technologies convert and store energy through reversible chemical reactions within electrode materials, enabling repeated charge-discharge cycles. Grid-scale BESS currently rely on a limited set of commercially viable technologies, with emerging chemistries under active development for specialized applications. Each battery type exhibits trade-offs in cost, energy and power density, degradation profile, operational complexity, and safety characteristics.
+
+### Commercial Technologies
+
+According to Song et al.\ \cite{song2024} and Wawer \cite{wawer2022a}, the most commonly deployed battery technologies for grid-scale applications include lithium-ion, sodium–sulfur, lead–acid, nickel–cadmium, and flow batteries. They categorise them based on performance characteristics and application suitability:
+
+    - Lithium-ion (Li-ion) batteries are the dominant storage technology, widely used from consumer electronics to electric vehicles and increasingly in grid applications. Their appeal lies in high energy and power density, round-trip efficiencies above 90\%, long cycle life, and rapidly declining costs. Variants such as lithium nickel manganese cobalt oxide (NMC) and lithium iron phosphate (LFP) balance trade-offs between energy density, cycle life, and thermal stability. Despite these advantages, Li-ion systems remain relatively costly, sensitive to low temperatures, and subject to performance degradation over time.
+    
+    - Sodium–sulfur (Na–S) batteries provide energy and power densities comparable to Li-ion and are suited for long-duration discharge. However, they operate at elevated temperatures (above 300$^{\circ}$C), which creates challenges in thermal management and fire safety that limit broader adoption.
+    
+    - Lead–acid batteries offer low upfront capital cost and established recycling pathways. Their drawbacks include limited cycle life, low energy density, and high weight, which constrain their use in grid-scale and other weight-sensitive applications.
+    
+    - Nickel–cadmium (Ni–Cd) batteries feature moderate energy density, high reliability, and robustness under extreme temperatures, but face environmental and regulatory barriers due to cadmium toxicity and recycling challenges.
+    
+    - Flow batteries, especially vanadium redox flow batteries (VRFB), decouple power and energy capacity by storing energy in external electrolyte tanks. This design enables scalable capacity, long lifetimes, and minimal degradation, but comes with low energy density and high upfront costs, making them most attractive for long-duration grid applications.
+
+These technologies differ not only in technical performance but also in economic implications. Li-ion and Na-S systems provide high efficiency and performance at higher cost and with stricter thermal requirements, whereas lead-acid and flow batteries offer lower-cost alternatives with trade-offs in density and ramping capability. Technology selection ultimately depends on system-level objectives such as arbitrage, ancillary services, or backup power provisioning \cite{song2024}.
+
+#### Emerging and Developmental Technologies
+
+According to Linnemann~\cite{linnemann2024}, several emerging battery chemistries aim to overcome current limitations in cost, sustainability, and supply chain resilience. Sodium-ion and zinc-based systems are being developed as low-cost alternatives that leverage abundant raw materials, while solid-state batteries promise higher energy density and improved safety. Other approaches, including lithium-sulfur, aluminum-ion, and organic redox systems, remain confined to laboratory research. Although none of these technologies are mature enough for large-scale deployment, they represent potential breakthroughs in long-duration storage, safety, and sustainability, and therefore remain central to ongoing research and pilot-scale demonstrations.
+
+### Technical Characteristics and Performance Parameters
+
+BESS technical characteristics directly impact market participation capabilities and economic viability. Understanding these parameters is essential for optimizing trading strategies and assessing market opportunities.
+
+#### Round-Trip Efficiency
+
+Round-trip efficiency (RTE) is a key performance indicator, defined as the ratio of electricity discharged from the storage system to the electricity supplied during charging, expressed as a percentage. It reflects conversion losses in charging and discharging, as well as self-discharge during storage periods. In the literature, a distinction is sometimes made between cell-level (DC) efficiency, which considers only electrochemical losses, and system-level (AC) efficiency, which also accounts for inverter and grid interface losses. The economic viability of BESS depends on capturing price spreads (see Section \ref{b-subsubsec:price_spread}) between charging and discharging intervals, with round-trip efficiency directly affecting the minimum price differential required for profitable operation \cite{wawer2022a}. 
+
+In optimization frameworks, charging and discharging efficiencies are typically modeled as separate parameters, with $\eta^+$ denoting charging efficiency and $\eta^-$ discharging efficiency \cite{sorourifar2020}. 
+
+Modern lithium-ion BESS achieve round-trip efficiencies of 85–95\%, while research suggests that systems with round-trip efficiency as low as 70\% ($\eta^+ = \eta^- = 0.83$) can still generate substantial returns through strategic market participation \cite{sorourifar2020}.
+
+#### State of Charge and Energy Management
+
+The State of Charge (SoC) represents the current energy level of the battery as a percentage of its total capacity, fundamentally determining operational flexibility and market participation capabilities. Battery operations are characterized by the evolution of state of charge over time, with $S_t$ representing the SoC (energy) at time $t$ \cite{sorourifar2020}.
+
+#### Power and Energy Specifications
+
+BESS performance is commonly characterized by two fundamental parameters \cite{sorourifar2020,wawer2022a}:
+
+Power Rating (or Max Charge/Discharge Rate) [MW] indicates the rate at which the storage system can charge or discharge, determining the speed of market response and the volume of energy that can be traded within specific time intervals.
+
+Energy Capacity [MWh] represents the total amount of energy the storage system can store, defining the duration of discharge operations and the scale of arbitrage opportunities.
+
+#### C-Rate and Duration Characteristics
+
+According to Wawer \cite{wawer2022a}, the relationship between power and capacity is expressed through the C-rate, which describes the charging or discharging current relative to the storage capacity:
+
+\begin{equation}
+\text{C-rate} = \frac{P_{\text{rated}}}{E_{\text{capacity}}}
+\label{eq:crate}
+\end{equation}
+\noindent The C-rate determines operational flexibility and market application suitability:
+
+  - C-rate = 1.0: Full charge or discharge within 1 hour
+  - C-rate = 0.5: Full charge or discharge within 2 hours
+  - C-rate = 2.0: Full charge or discharge within 30 minutes
+
+For example, a BESS with 2 MWh capacity and 0.5 MW power rating operates at a C-rate of 0.25, enabling full charge or discharge within 4 hours. Higher C-rates enable faster market response and participation in short-duration, high-value market products, while lower C-rates are suitable for longer-duration energy shifting applications \cite{wawer2022a}.
+Research indicates that optimal energy-to-power ratios for certain battery technologies may be less than 1 MWh/MW when comprehensive market participation strategies are employed \cite{sorourifar2020}.
+
+#### Depth of Discharge
+The Depth of Discharge (DoD) represents the percentage of total capacity that can be safely discharged without compromising system functionality or longevity. Modern lithium-ion BESS typically operate with DoD ranges of 80--95\%, though deeper discharge capabilities may conflict with cycle life optimization \cite{wawer2022a}.
+
+#### Throughput
+Energy throughput tracking is critical for both operational optimization and degradation management. Cumulative energy throughput ($C_t$) measures the total energy processed by the battery over its operational lifetime, serving as a key indicator for degradation modeling and economic assessment \cite{sorourifar2020}. This parameter directly influences battery capacity constraints, as accumulated energy throughput affects the maximum usable state of charge through the relationship: $0 \leq S_t \leq (S - \delta C_t)$, where $S$ represents the original battery capacity and $\delta$ captures the degradation rate \cite{sorourifar2020}.
+
+#### State of Health
+The State of Health (SoH) defines the practically available energy for market operations and declines over time due to calendar aging and cycling effects. Cycle life characteristics directly influence economic viability, as degradation affects both operational capacity and the timing of cell replacement. The interplay between DoD and cycle life creates operational trade-offs: deeper discharges may increase short-term revenues but accelerate long-term degradation costs \cite{wawer2022a}.
+
+#### Cycle Life
+Cycle life refers to the number of complete charge–discharge cycles a battery can undergo before its usable capacity falls below a specified threshold. 
+This metric is commonly used to quantify battery longevity and is central to warranty conditions. 
+To formalize these trade-offs, Original Equipment Manufacturers (OEMs) specify warranty conditions that limit either the number of full cycles or the cumulative energy throughput. 
+For instance, INTILION’s industrial-scale BESS carries a performance guarantee of 10 years or 4,000 cycles, whichever occurs first, with expected operation to 70\% SoH beyond 6,000 cycles at 90\% DoD \cite{intilion} (see Appendix~\ref{app:intilion_datasheet}). 
+For a 10~MWh system operated at 90\% DoD, the 4,000-cycle limit implies a cumulative throughput of
+
+\begin{equation}
+E_{\text{throughput}} = \text{Number of Cycles} \times (\text{Capacity} \times \text{DoD})
+\end{equation}
+
+This illustrates that warranties effectively translate technical degradation into quantifiable lifetime energy limits, which must be respected in optimization models through appropriate degradation penalty terms.
+
+
+#### Response time and ramp rates
+Response time and ramp rates determine suitability for different market products, with BESS typically offering sub-second response times that enable participation in frequency regulation and ancillary services markets \cite{wawer2022a}. Such capabilities are also subject to requirements defined in European grid codes \cite{entsoe_rfg_2016}, which set the overall framework, while national TSOs such as APG specify concrete values in their connection standards. In Austria, these include active power ramp-rate limits (grid security), minimum and maximum response times for active power provision (reserve delivery), and requirements for fault-ride-through (stability) and voltage support \footnote{See the latest version of the APG Netzanschlussregeln -- Strom (NAR) technical annex for full parameter definitions, available at \url{https://www.apg.at/en/grid/grid-access/grid-connection-rules}.}, which directly constrain how BESS may deliver energy and ancillary services within market operations \cite{apg_nar}.
+
+
+#### Economic Evaluation Metrics
+
+Net Present Value (NPV) serves as the primary economic metric for BESS investment assessment, representing the net present value of the BESS investment in monetary terms. NPV calculations must account for the complex interactions between market participation strategies, degradation effects, and operational constraints over multi-year investment horizons.
+Research demonstrates that optimal market participation strategies can achieve 4 to 5-fold increases in NPV compared to energy-only operations, highlighting the critical importance of comprehensive market access for BESS economic viability \cite{sorourifar2020}. The NPV framework enables systematic comparison of different operational strategies, replacement schedules, and sizing decisions across varying market conditions and degradation scenarios.
+
+
+ -->

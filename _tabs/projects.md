@@ -4,5 +4,5 @@ icon: fas fa-briefcase
 order: 2
 ---
 
-> Add Markdown syntax content to file `_tabs/projects.md`{: .filepath } and it will show up on this page.
+> No projects added yet.
 {: .prompt-tip }

@@ -1,0 +1,142 @@
+---
+title: Wholesale Electricity Markets
+description: Content stems from my master thesis.
+author: Magdalena
+date: 2025-11-30 10:00:00 +0800
+categories: [Energy, 02 - Elecricity Markets]
+tags: [thesis]
+---
+<!-- 
+# Wholesale Electricity Markets
+
+## Core Concepts and Definitions
+
+Key concepts in wholesale electricity markets include:
+
+- Market Participants: Various entities such as generators, retailers, trading companies, aggregators, as well as municipal utilities, banks, large industrial consumers, and TSOs that engage in buying and selling electricity \cite{epexspot2025trading}.
+- Market Clearing: The process of matching supply and demand, settling receivables and liabilities between participants, and managing counterparty risk — typically via a central auction in exchange trading or for OTC transactions \cite{linnemann2024}.
+- Ancillary Services: Support services that maintain grid reliability and stability, including frequency control (balancing supply and demand in real time to keep grid frequency at 50 Hz), congestion management (avoiding overloads on network elements), loss recovery (compensating for transmission losses), voltage control via reactive power, and black start capability (restoring supply after a blackout without external power) \cite{linnemann2024}.
+
+### Overview of Wholesale Electricity Markets
+
+Wholesale electricity markets refer to the trading of energy between market participants prior to delivery to the end consumer. These transactions form the foundation of electricity pricing and system coordination. Trading can occur through different types of contracts, varying in supply structure, delivery obligations, and whether the transaction results in physical delivery or only a financial settlement \cite{linnemann2024}.
+
+In general, market participants submit buy and sell bids, known as orders. A transaction is concluded when a buy bid matches or exceeds a corresponding sell bid. This process of pairing bids and executing transactions is known as matching \cite{wawer2022a}.
+
+Wholesale trading can be divided into two main categories: exchange-based trading and over-the-counter (OTC) trading \cite{wawer2022a, linnemann2024}.
+
+## Exchange Trading
+Electricity exchanges, such as EPEX SPOT, are fully electronic marketplaces where standardised electricity products are traded. The exchange acts as a central counterparty for all transactions, providing a high level of transparency and reducing counterparty risk. All bidding, matching, pricing, and settlement processes are managed centrally. The range of tradable products is limited to those listed by the exchange. Public disclosure of market data enhances liquidity and market confidence \cite{wawer2022a, linnemann2024}.
+
+### Over-the-Counter Trading
+In over-the-counter (OTC) trading, contracts are negotiated directly between buyers and sellers without a central authority. 
+This offers greater flexibility in contract design and product variety, making it suitable for tailored agreements. 
+Brokers often act as intermediaries, and payments are settled bilaterally between parties. 
+Standardized contracts, such as those issued by the European Federation of Energy Traders, are commonly used to structure and settle OTC transactions \cite{wawer2022a, linnemann2024}.
+
+#### Trading Products
+According to Linnemann~\cite{linnemann2024}, electricity markets offer a variety of financial and physical trading products that differ in terms of standardization, settlement mechanisms, and delivery obligations. These products can be categorized into forwards, futures, and options. Forwards are bilateral contracts, either standardized or customized, in which two parties agree on the delivery of a specified quantity of electricity at a fixed price over a defined period within a specific control area. These contracts typically result in physical delivery and are tailored to the parties’ hedging needs. Futures are standardized forward contracts traded on exchanges, obligating both parties to settle a fixed volume at a predetermined price for future delivery. While some may involve physical settlement, most are financially settled by compensating for the price difference relative to the underlying spot price. Options grant the holder the right, but not the obligation, to buy (call option) or sell (put option) a specific quantity of electricity at a predetermined strike price. They are typically used for hedging or speculative strategies, providing asymmetric risk exposure.
+
+#### Contract Types
+Electricity is traded in standardized contracts over different delivery periods and time blocks. The two most common are base load and peak load products. Base load contracts deliver a constant amount of electricity every hour, 24/7, over the specified term (e.g., day, month, quarter, year) and are primarily used to hedge continuous demand. Peak load contracts, by contrast, cover delivery from 08:00 to 20:00, Monday to Friday, aligning with typical high-demand hours. A further category is off-peak contracts, which encompass low-demand periods outside peak hours—overnight (00:00--08:00 and 20:00--24:00 on weekdays) as well as full weekends (00:00--24:00). Such contracts are particularly suited for load profiles with early morning or weekend consumption, such as those of bakeries.
+In addition to long-term block products, spot markets also support hourly and quarter-hourly contracts, enabling fine-grained delivery scheduling and short-term optimization strategies ~\cite{linnemann2024, wawer2022a}.
+
+#### Market Segmentation by Time Horizon
+Wholesale markets are further segmented into distinct time-based markets — Futures, Day-Ahead, Intraday and Balancing — each serving different trading horizons \cite{linnemann2024}. 
+While all market types can be found in both exchange and OTC formats, this thesis concentrates on exchange-based markets, as their transparency, liquidity, and data availability make them more relevant for the research objective of optimizing battery storage systems. The European electricity market structure is best illustrated through the timeline of trading activities, as shown in Figure \ref{fig:epexTiming}. 
+Each of the different markets serves distinct purposes in the overall market ecosystem. Futures markets, which are not depicted in the illustration as they pertain to longer horizons and are less relevant here, handle contracts spanning weeks to years and are primarily used for hedging and price discovery. Day-ahead markets focus on next-day delivery through auctions that establish baseline schedules. Intraday markets provide fine-tuning capabilities for positions closer to real-time, accommodating forecast updates and operational changes. Finally, balancing markets ensure system stability during actual delivery through real-time interventions by TSOs. This temporal segmentation allows market participants to manage risks and optimize positions across different planning horizons while maintaining system reliability \cite{wawer2022a}.
+
+![Electricity Market Timeline (own illustration inspired by \cite{wawer2022a} and \cite{epexspot2025trading})](spot-market-timings.png)
+
+*Note:* $d$ = day of delivery period; $t$ = start time of delivery period; $x$ = lead time for specific country ($0$ for Austria).
+
+
+#### Futures Market
+The futures market is a marketplace for trading long-term forward contracts, so-called futures. The futures market comprises futures with delivery periods of one week, one month, one quarter or one year. 
+All futures on the futures market can be traded both physically and financially. In the case of physical delivery, the energy is actually delivered over the term of the contract. In the case of a financial future, there is only a financial value in relation to the underlying asset. The prices on the spot market serve as the underlying value. In addition to futures, it is also possible to trade options for annual futures (for details on trading products, see Section \ref{sec:trading_products}). 
+The participants in the futures market pursue different motives. For example, large electricity producers try to hedge their generation capacities on the futures market in the long term, whereas electricity distributors try to ensure long-term price stability. Banks or investment funds, on the other hand, may try to generate an additional margin through speculative transactions \cite{linnemann2024}.
+
+### Spot Market: Overview
+The spot market is the segment of the electricity market where trading takes place for near-term physical delivery, typically within the same day or the next day. Because all trades are physically settled, the spot market is closely interlinked with grid operation.  Transactions must comply with the schedule and balancing group system (see section \ref{sec:electricityOrganization}), and trading is only permitted up to the GCT defined by TSOs \cite{wawer2022a}.
+The spot market has become particularly relevant for the integration of renewable energy sources (RES), as next-day weather forecasts enable relatively accurate generation predictions for wind and solar assets. This has led to a steady increase in spot market volumes since the energy transition began, as long-term renewable forecasting for futures markets remains more challenging \cite{linnemann2024}.
+Spot trading on EPEX is divided into day-ahead and intraday markets (see Figure~\ref{fig:epexTiming}). The day-ahead auction clears 24 hourly contracts for the following day, while the intraday market enables near-real-time adjustments via auctions and continuous trading. Together, these mechanisms ensure both efficient price formation and operational flexibility~\cite{wawer2022a, linnemann2024}.
+
+#### Role and Functions
+Spot markets serve as a critical mechanism in contemporary electricity systems, particularly as they accommodate increasing shares of variable renewable generation. These markets facilitate the continuous balancing of supply and demand, support the efficient utilization of grid infrastructure, and deliver transparent, time-sensitive price signals that guide both short-term operational decisions and long-term investment strategies \cite{linnemann2024}.
+Within the spot market ecosystem, the day-ahead auction plays a pivotal role in establishing a liquid and efficient trading environment that determines prices for electricity delivered the following day, thereby anchoring the short-term price signal for the entire market \cite{abramova2021}. According to Wawer \cite{wawer2022a}, the essential functions of spot markets include:
+
+1. Power Plant Dispatch
+
+  The core function of the spot market is to determine the most cost-effective dispatch of the existing power plant fleet to meet electricity demand. This requires ranking power plants by their marginal costs and activating them in ascending order, ensuring that the load is covered at the lowest possible system cost. At the same time, dispatch decisions must respect the technical constraints of power plant operation, accommodate system service requirements, and incorporate demand-side flexibility where available.
+
+2. Activation of Flexibility
+
+  To maintain a continuous balance between electricity generation and consumption — especially with the variable output of renewable sources — markets must activate flexibility on both the supply and demand sides. Efficient price signals should incentivize load shifting, demand response, and energy storage to help balance the system dynamically and cost-effectively, reducing reliance on grid operator interventions.
+
+3. Balancing Group Management
+
+  Spot market transactions enable balancing group managers to align generation and consumption within their portfolios on a quarter-hourly basis. High balancing group accuracy minimizes system-wide imbalances and reduces the need for costly balancing energy. Effective use of the spot market allows balancing group operators to avoid imbalance charges and contributes to overall system stability.
+
+
+### Spot Market: Day-Ahead
+The day-ahead market (indicated in blue in Figure~\ref{fig:epexTiming}) is the most liquid segment of the spot market and serves as the primary benchmark for short-term electricity prices in Europe. It operates as a daily uniform-price auction, where electricity is traded in 24 hourly contracts for physical delivery on the following day. Market participants submit bids until a fixed gate closure, after which a single market-clearing price is determined for each hour by matching aggregated supply and demand curves. 
+The auction follows a pay-as-cleared pricing mechanism: all accepted bids within an hour are settled at the same market-clearing price, set by the intersection of aggregated supply and demand curves. This approach minimizes opportunities for strategic bidding and promotes transparent price discovery. However, bidders remain uncertain about acceptance until the auction clears, and bids may be partially or fully rejected if market prices fall outside their submitted bid levels. 
+The day-ahead auction plays a pivotal role in price discovery and system planning: it provides transparent reference prices, facilitates efficient dispatch decisions, and anchors expectations for subsequent intraday trading. Participants may place simple hourly bids or block orders that span multiple hours, reflecting operational and financial constraints ~\cite{wawer2022a,linnemann2024}. 
+
+#### Price Formation
+In the day-ahead market, prices are set according to the merit order principle, dispatching generation units in ascending order of marginal cost until demand is met. The marginal unit — the most expensive required generator — sets the market-clearing price. While low-cost renewables typically enter first, gas- and coal-fired plants, subject to fuel and CO$_2$ costs, often determine prices during high-demand periods~\cite{epexspot2025trading,epexspot2022fundamentals}.
+
+Unlike a theoretical merit order with perfectly inelastic demand, wholesale demand in the day-ahead market is somewhat elastic: participants adjust positions based on price expectations. Demand curves represent wholesale market bids rather than final consumer behavior and incorporate flexibility from storage, demand response, and cross-border trading~\cite{linnemann2024}.
+
+Each hourly product is settled via a uniform price auction, where aggregated supply and demand curves determine a single clearing price. Expectations are shaped by fundamentals such as weather, fuel prices, renewable output, and asset availability. Under the EU (European Union) Regulation on Wholesale Energy Market Integrity and Transparency (REMIT, No. 1227/2011)~\cite{REMIT2011}, market participants are required to disclose inside information, including unplanned outages and infrastructure constraints, thereby reducing information asymmetry and supporting efficient price formation. Day-ahead prices thus reflect both current system conditions and short-term market expectations.
+
+
+### Spot Market: Intraday
+The intraday market complements the day-ahead auction by enabling short-term trading closer to real time. It provides flexibility for participants to react to updated renewable forecasts, unplanned outages, or sudden shifts in demand. Compared to the day-ahead auction, intraday trading offers higher temporal granularity, with hourly, half-hourly, or quarter-hourly products depending on the market area.
+Most European intraday markets follow a hybrid structure combining discrete auctions with continuous trading. Auctions, held at fixed times, clear uniform prices for sets of contracts, while continuous trading operates around the clock with automatic order matching. The latter is typically organized on electronic platforms with transparent order books under a pay-as-bid mechanism. Gate closure times vary by country and product: cross-border trades generally close about 30 minutes before delivery to allow TSO coordination, while transactions within the control area may remain open until just a few minutes before physical delivery.
+Because forecast accuracy for wind and solar improves as delivery nears, the intraday market plays a key role in integrating variable RES. It allows market participants to fine-tune positions, limit imbalance costs, and addresses short-term arbitrage opportunities. Although volumes are smaller than in the day-ahead market, intraday trading has been growing steadily across Europe as the need for short-term flexibility increases~\cite{linnemann2024}.
+
+### EPEX SPOT
+The European Power Exchange (EPEX SPOT), based in Paris, is Europe's leading platform for short-term electricity trading. As a joint venture between the European Energy Exchange AG (EEX) and Powernext, and part of the EEX Group, it facilitates day-ahead and intraday transactions across 19 countries, including Germany, France, Austria, and Switzerland. In 2024, EPEX processed more than 868~TWh in spot volumes (1,529~TWh double-sided), making it the largest spot power exchange in Europe. Trading is conducted electronically with standardized clearing through European Commodity Clearing (ECC), which minimizes counterparty risk and ensures transparency.
+Most EPEX markets are integrated into the Single Day-Ahead Coupling (SDAC), which coordinates cross-border day-ahead auctions across 28 countries. Only Great Britain and Switzerland remain outside this coupled framework. For intraday, the Single Intraday Coupling (SIDC) links EPEX with other European platforms, enabling near-real-time cross-border trading~\cite{epexspot2025trading}.
+
+#### EPEX Day-Ahead Market
+On EPEX, the day-ahead market follows the general auction mechanism introduced in Section~\ref{sec:day_ahead}. Bids can be placed up to 45 days in advance, with final submission at 12:00~CET on day~$t$-1d \footnote{$t$-1d = The day before the delivery period}. 
+Results are published shortly after, typically at 12:45~CET. Products include 24 hourly contracts as well as block orders covering multiple hours to account for operational constraints. 
+Pricing is uniform across accepted bids, with the market-clearing price determined by the intersection of supply and demand. The coupled auction ensures consistent results across the majority of Europe~\cite{epexspot2025trading}.
+
+#### EPEX Intraday Market
+The EPEX intraday market combines three pan-European auctions (at 15:00, 22:00, and 10:00~CET) with continuous trading on the platform, which supports automatic order matching and transparent order books. Compared to day-ahead, it offers finer contract granularity: 96 quarter-hourly products per day, supplemented by 30- and 60-minute contracts depending on the country.
+Volumes on the EPEX intraday market reached 190~TWh in 2024, reflecting its growing role in short-term portfolio balancing and forecast error correction. Liquidity is strongest in Germany and Great Britain but continues to expand across Europe as intraday trading becomes the key instrument for flexibility in systems with high renewable penetration~\cite{epexspot2025trading, linnemann2024}.
+
+
+### Market Dynamics
+
+#### Extreme Price Events and Price Spikes
+
+Electricity markets are prone to extreme price events, characterized by abrupt and temporary departures from typical price levels. The most prominent manifestation of these events are price spikes: sudden, short-lived surges that can reach magnitudes several times higher than normal market prices. Such spikes arise from a combination of technical and economic factors, including generation or transmission outages, network congestion, volatile renewable output, unexpected demand surges, or strategic bidding practices.
+Price spikes occur in both day-ahead (see \ref{sec:day_ahead}) and intraday markets (see \ref{sec:intraday}), though they are more prevalent in real-time trading (in intraday markets), where unexpected imbalances must be corrected immediately with high-cost capacity. With growing shares of variable renewable energy, both the frequency and severity of spikes have increased in recent years. Economically, price spikes create opportunities for profit (e.g., through arbitrage - explanation follows in Section \ref{subsec:arbitrage}) but also expose consumers and market participants to substantial cost risks, making their anticipation and management central to effective trading strategies and operational planning \cite{lopez2024}.
+
+#### Price Spreads
+The price spread represents the difference between two related electricity market prices, most commonly between the day-ahead (DA) and intraday (ID) markets \cite{wawer2022a}:
+
+$$
+  	ext{Spread} = P_{\mathrm{ID}} - P_{\mathrm{DA}}.
+$$
+
+where $P_{\mathrm{ID}}$ and $P_{\mathrm{DA}}$ denote the intraday and day-ahead market prices, respectively.
+For BESS and other flexible assets, spreads signal arbitrage opportunities: charging when prices are low and discharging when prices are high.
+The economic viability of such strategies depends on the magnitude and timing of spreads, as well as on round-trip efficiency.
+Since efficiency losses require larger spreads to break even, accurate spread forecasts help operators target only the most profitable charging–discharging windows and avoid unprofitable cycles.
+
+#### Uncertainty-Aware Forecasting
+Electricity price forecasting approaches can be broadly categorised into point forecasts and probabilistic forecasts. 
+Point forecasts provide a single predicted value for each time step, offering results that are easy to interpret and often effective under simplifying assumptions such as homoscedasticity. 
+However, they cannot capture the uncertainty surrounding future prices, which limits their value for risk-sensitive decisions \cite{zhang2024}.  
+
+Probabilistic forecasts address this limitation by estimating the distribution of possible future prices, enabling risk-aware decision-making — such as selecting strategies that maximise expected profit while limiting downside risk. 
+Two main forms are common:
+- Probability density forecasts: Estimate the full predictive distribution, often assuming a parametric form (e.g., normal, logistic), though these assumptions may not fit the skewed nature of electricity prices.
+- Prediction interval forecasts: Estimate bounds within which the actual price is expected to fall with a predefined probability. Non-parametric methods, such as quantile regression or kernel density estimation, can avoid restrictive distributional assumptions.
+In practice, probabilistic forecasts can be implemented using quantile regression, skewed-$t$ distribution fitting, or ensemble-based approaches, and are particularly valuable for optimising market participation under uncertainty.
+ -->
