@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Magdalena Breitenauer</title>
   <subtitle>A digital garden.</subtitle>
-  <updated>2025-12-30T17:45:42+01:00</updated>
+  <updated>2025-12-30T21:15:54+01:00</updated>
   <author>
     <name>Magdalena Breitenauer</name>
     <uri>http://localhost:4000/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>Veganes Apfel-Tiramisu</title>
     <link href="http://localhost:4000/posts/tiramisu/" rel="alternate" type="text/html" title="Veganes Apfel-Tiramisu" />
-    <published>2025-11-30T10:00:00+01:00</published>
+    <published>2025-12-30T17:00:00+01:00</published>
   
-    <updated>2025-11-30T10:00:00+01:00</updated>
+    <updated>2025-12-30T17:00:00+01:00</updated>
   
     <id>http://localhost:4000/posts/tiramisu/</id>
     <content type="text/html" src="http://localhost:4000/posts/tiramisu/" />
@@ -48,9 +48,9 @@
   <entry>
     <title>Vegane Albóndigas</title>
     <link href="http://localhost:4000/posts/albondigas/" rel="alternate" type="text/html" title="Vegane Albóndigas" />
-    <published>2025-11-30T10:00:00+01:00</published>
+    <published>2025-11-30T16:00:00+01:00</published>
   
-    <updated>2025-11-30T10:00:00+01:00</updated>
+    <updated>2025-11-30T16:00:00+01:00</updated>
   
     <id>http://localhost:4000/posts/albondigas/</id>
     <content type="text/html" src="http://localhost:4000/posts/albondigas/" />
@@ -72,23 +72,27 @@
 
   
   <entry>
-    <title>Ueberbackene Gnochi</title>
-    <link href="http://localhost:4000/posts/ueberbackene-gnochi/" rel="alternate" type="text/html" title="Ueberbackene Gnochi" />
-    <published>2025-11-30T00:00:00+01:00</published>
+    <title>Apfel Cheesecake mit Spekuliatiusboden</title>
+    <link href="http://localhost:4000/posts/apfel-cheesecake/" rel="alternate" type="text/html" title="Apfel Cheesecake mit Spekuliatiusboden" />
+    <published>2025-11-30T10:00:00+01:00</published>
   
-    <updated>2025-11-30T00:00:00+01:00</updated>
+    <updated>2025-11-30T10:00:00+01:00</updated>
   
-    <id>http://localhost:4000/posts/ueberbackene-gnochi/</id>
-    <content type="text/html" src="http://localhost:4000/posts/ueberbackene-gnochi/" />
+    <id>http://localhost:4000/posts/apfel-cheesecake/</id>
+    <content type="text/html" src="http://localhost:4000/posts/apfel-cheesecake/" />
     <author>
-      <name>Magdalena Breitenauer</name>
+      <name>Magdalena</name>
     </author>
 
   
     
+    <category term="Rezepte" />
+    
+    <category term="Desserts" />
+    
   
 
-  <summary></summary>
+  <summary>Rezept für Apfel Cheesecake mit Spekuliatiusboden</summary>
 
   </entry>
 
@@ -98,7 +102,7 @@
     <link href="http://localhost:4000/posts/intro/" rel="alternate" type="text/html" title="Hello world!" />
     <published>2025-11-29T13:00:00+01:00</published>
   
-    <updated>2025-11-29T13:00:00+01:00</updated>
+    <updated>2025-12-30T17:47:23+01:00</updated>
   
     <id>http://localhost:4000/posts/intro/</id>
     <content type="text/html" src="http://localhost:4000/posts/intro/" />
