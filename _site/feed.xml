@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Magdalena Breitenauer</title>
   <subtitle>A digital garden.</subtitle>
-  <updated>2025-12-30T21:15:54+01:00</updated>
+  <updated>2026-02-05T15:41:50+01:00</updated>
   <author>
     <name>Magdalena Breitenauer</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,36 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 Magdalena Breitenauer </rights>
+  <rights> © 2026 Magdalena Breitenauer </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Karotten-Süßkartoffel-Suppe</title>
+    <link href="http://localhost:4000/posts/karottensuesskartoffelsuppe/" rel="alternate" type="text/html" title="Karotten-Süßkartoffel-Suppe" />
+    <published>2026-02-04T17:00:00+01:00</published>
+  
+    <updated>2026-02-04T17:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/karottensuesskartoffelsuppe/</id>
+    <content type="text/html" src="http://localhost:4000/posts/karottensuesskartoffelsuppe/" />
+    <author>
+      <name>Magdalena</name>
+    </author>
+
+  
+    
+    <category term="Rezepte" />
+    
+    <category term="Suppen" />
+    
+  
+
+  <summary>Rezept für eine cremige Karotten-Süßkartoffel-Suppe</summary>
+
+  </entry>
 
   
   <entry>
@@ -24,7 +50,7 @@
     <link href="http://localhost:4000/posts/tiramisu/" rel="alternate" type="text/html" title="Veganes Apfel-Tiramisu" />
     <published>2025-12-30T17:00:00+01:00</published>
   
-    <updated>2025-12-30T17:00:00+01:00</updated>
+    <updated>2025-12-30T21:17:04+01:00</updated>
   
     <id>http://localhost:4000/posts/tiramisu/</id>
     <content type="text/html" src="http://localhost:4000/posts/tiramisu/" />
@@ -50,7 +76,7 @@
     <link href="http://localhost:4000/posts/albondigas/" rel="alternate" type="text/html" title="Vegane Albóndigas" />
     <published>2025-11-30T16:00:00+01:00</published>
   
-    <updated>2025-11-30T16:00:00+01:00</updated>
+    <updated>2025-12-30T21:17:04+01:00</updated>
   
     <id>http://localhost:4000/posts/albondigas/</id>
     <content type="text/html" src="http://localhost:4000/posts/albondigas/" />

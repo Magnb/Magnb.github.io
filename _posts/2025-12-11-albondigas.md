@@ -15,25 +15,25 @@ image:
 ## Zutaten (für ca. 4 Portionen / ~12–16 Bällchen)
 
 ### Für die Albóndigas
-- 500 g pflanzliches Hack (z. B. “myvay” oder anderes veganes Hack)
-- 1 kleine Zwiebel, fein gehackt
-- 2–3 Knoblauchzehen, fein gehackt
-- 2 EL Paniermehl (oder Semmelbrösel; glutenfrei: Paniermehl-Ersatz)
-- ca. ½ Bund frische Petersilie, fein gehackt
-- optional: 20 g gehackte & geröstete Pinienkerne (für Biss und Geschmack)
-- Gewürze: 1 TL edelsüßes Paprikapulver, Salz, Pfeffer; optional 1 Prise Kreuzkümmel
-- Olivenöl zum Anbraten
+	•	500 g pflanzliches Hack (z. B. “myvay” oder anderes veganes Hack)
+	•	1 kleine Zwiebel, fein gehackt
+	•	2–3 Knoblauchzehen, fein gehackt
+	•	2 EL Paniermehl (oder Semmelbrösel; glutenfrei: Paniermehl-Ersatz)
+	•	ca. ½ Bund frische Petersilie, fein gehackt
+	•	optional: 20 g gehackte & geröstete Pinienkerne (für Biss und 	•	schmack)
+	•	Gewürze: 1 TL edelsüßes Paprikapulver, Salz, Pfeffer; optional 1 	•	ise Kreuzkümmel
+	•	Olivenöl zum Anbraten
 
 ### Für die Tomatensauce
-- 500 g frische Tomaten (hochreif) oder 1 Dose stückige Tomaten
-- 2 EL Tomatenmark
-- 1 Zwiebel, fein gehackt
-- 2 Knoblauchzehen, fein gehackt
-- 50 ml trockener Rotwein (optional, für Geschmackstiefe)
-- optional: 1 Lorbeerblatt
-- optional: 1 TL frischer Thymian oder 1 TL getrockneter Thymian (oder mediterrane Kräuter)
-- optional: 1 TL Zucker (balanciert Säure)
-- Salz, Pfeffer, Olivenöl zum Anbraten
+	•	500 g frische Tomaten (hochreif) oder 1 Dose stückige Tomaten
+	•	2 EL Tomatenmark
+	•	1 Zwiebel, fein gehackt
+	•	2 Knoblauchzehen, fein gehackt
+	•	50 ml trockener Rotwein (optional, für Geschmackstiefe)
+	•	optional: 1 Lorbeerblatt
+	•	optional: 1 TL frischer Thymian oder 1 TL getrockneter Thymian (oder 	•	diterrane Kräuter)
+	•	optional: 1 TL Zucker (balanciert Säure)
+	•	Salz, Pfeffer, Olivenöl zum Anbraten
 
 ---
 
