@@ -1,10 +1,10 @@
 ---
+layout: post
 title: Vegane Albóndigas
 description: Rezept für Albóndigas
-author: Magdalena
 date: 2025-11-30 15:00:00 
 categories: [Rezepte, Vegane Hauptgerichte]
-tags: [de]
+authors: [magnb, chatgpt]
 image:
   path: /images/albondigas.jpeg
   alt: Albóndigas auf einem Teller; serviert mit Brot und Süßkartoffelpommes.
@@ -21,7 +21,7 @@ image:
 	•	2 EL Paniermehl (oder Semmelbrösel; glutenfrei: Paniermehl-Ersatz)
 	•	ca. ½ Bund frische Petersilie, fein gehackt
 	•	optional: 20 g gehackte & geröstete Pinienkerne (für Biss und 	•	schmack)
-	•	Gewürze: 1 TL edelsüßes Paprikapulver, Salz, Pfeffer; optional 1 	•	ise Kreuzkümmel
+	•	Gewürze: 1 TL edelsüßes Paprikapulver, Salz, Pfeffer; optional 1 Brise Kreuzkümmel
 	•	Olivenöl zum Anbraten
 
 ### Für die Tomatensauce
@@ -31,7 +31,7 @@ image:
 	•	2 Knoblauchzehen, fein gehackt
 	•	50 ml trockener Rotwein (optional, für Geschmackstiefe)
 	•	optional: 1 Lorbeerblatt
-	•	optional: 1 TL frischer Thymian oder 1 TL getrockneter Thymian (oder 	•	diterrane Kräuter)
+	•	optional: 1 TL frischer Thymian oder 1 TL getrockneter Thymian (oder mediterrane Kräuter)
 	•	optional: 1 TL Zucker (balanciert Säure)
 	•	Salz, Pfeffer, Olivenöl zum Anbraten
 

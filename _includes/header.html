@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title | default: "My Blog" }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+      <!--<a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>-->
+      <a href="{{ '/projects/' | relative_url }}"{% if page.url contains '/projects' %} class="active"{% endif %}>Projekte</a>
+      <a href="{{ '/wandern/' | relative_url }}"{% if page.url contains '/wandern' %} class="active"{% endif %}>Wanderungen</a>
+      <a href="{{ '/rezepte/' | relative_url }}"{% if page.url contains '/rezepte' %} class="active"{% endif %}>Rezepte</a>
+      <span class="site-search">
+        <input id="site-search-input" type="search" placeholder="Search posts…" aria-label="Search posts">
+        <div id="site-search-results" class="site-search-results" aria-live="polite"></div>
+      </span>
+    </nav>
+  </div>
+</header>

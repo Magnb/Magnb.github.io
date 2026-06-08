@@ -1,0 +1,10 @@
+{% assign items = site.posts %}
+{"items":[{% for p in items %}{
+  "title": {{ p.title | jsonify }},
+  "url": {{ p.url | relative_url | jsonify }},
+  "date": {{ p.date | date: '%Y-%m-%d' | jsonify }},
+  "categories": {{ p.categories | jsonify }},
+  "tags": {{ p.tags | jsonify }},
+  "description": {{ p.description | default: p.excerpt | strip_html | strip_newlines | truncate: 300 | jsonify }},
+  "content": {{ p.content | strip_html | strip_newlines | truncate: 2000 | jsonify }}
+}{% if forloop.last %}{% else %},{% endif %}{% endfor %}]}

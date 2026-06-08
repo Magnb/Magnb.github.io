@@ -1,13 +1,11 @@
 ---
+layout: post
 title: Apfel Cheesecake mit Spekuliatiusboden
 description: Rezept für Apfel Cheesecake mit Spekuliatiusboden
-author: Magdalena
+author: magnb
 date: 2025-11-30 09:00:00 
 categories: [Rezepte, Desserts]
-tags: [de]
 ---
-
-# Apfel Cheesecake mit Spekuliatiusboden
 
 ## Zutaten
 Boden:

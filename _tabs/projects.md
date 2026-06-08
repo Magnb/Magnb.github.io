@@ -1,8 +1,7 @@
 ---
-# the default layout is 'page'
-icon: fas fa-briefcase
-order: 2
+layout: page
+title: "Projekte"
+permalink: /projects/
 ---
 
-> No projects added yet.
-{: .prompt-tip }
+- [trailviewer](/projects/trailviewer/) — Interaktive Karten-App für Wandertouren, entwickelt mit Claude

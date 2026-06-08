@@ -1,0 +1,119 @@
+---
+layout: default
+---
+<!---h1>{{ page.title | default: site.title }}</h1> 
+-->
+
+{%- comment -%}
+Prefer an explicit `page.posts` (useful for custom pages) otherwise filter by
+`page.category_filter` (case-insensitive) or fallback to all posts.
+{%- endcomment -%}
+
+{% if page.posts %}
+  {% assign posts_list = page.posts %}
+{% elsif page.category_filter %}
+  {% assign posts_list = site.posts | where_exp: "post", "post.categories contains page.category_filter" %}
+{% else %}
+  {% assign posts_list = site.posts %}
+{% endif %}
+
+{% if posts_list.size == 0 %}
+  <p>Keine Beiträge gefunden.</p>
+{% else %}
+  {% comment %}Collect unique main categories (first category) in order of appearance using a string capture.{% endcomment %}
+  {% capture mains_str %}{% endcapture %}
+  {% for p in posts_list %}
+    {% assign main = p.categories[0] | default: "Uncategorized" %}
+    {% unless mains_str contains main %}
+      {% capture mains_str %}{{ mains_str }}{{ main }}, {% endcapture %}
+    {% endunless %}
+  {% endfor %}
+  {% assign mains = mains_str | split: ", " %}
+
+  {% for main in mains %}
+    <section class="main-category">
+      <h2 class="main-category-title">{{ main }}</h2>
+
+      {% comment %}Collect unique subcategories (remaining categories) for this main category.{% endcomment %}
+      {% assign subcats = "" | split: "," %}
+      {% for p in posts_list %}
+        {% if p.categories[0] == main %}
+          {% assign cats = p.categories | slice: 1, 10 %}
+          {% for c in cats %}
+            {% unless subcats contains c %}
+              {% assign subcats = subcats | push: c %}
+            {% endunless %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% for sub in subcats %}
+        <h3 class="sub-category-title">{{ sub }}</h3>
+        <div class="post-grid">
+          {% for p in posts_list %}
+            {% if p.categories[0] == main and p.categories contains sub %}
+              <article class="post-card">
+                {% if p.image and p.image.path %}
+                  <a class="post-thumb" href="{{ p.url | relative_url }}">
+                    <img src="{{ p.image.path | relative_url }}" alt="{{ p.image.alt | default: p.title }}">
+                  </a>
+                {% endif %}
+                <div class="post-card-body">
+                  <a href="{{ p.url | relative_url }}" class="post-link">{{ p.title }}</a>
+                  <div class="post-date">{{ p.date | date: "%Y-%m-%d" }}</div>
+                  {% if p.description %}
+                    <p class="post-excerpt">{{ p.description | strip_html | truncate: 180 }}</p>
+                  {% elsif p.excerpt %}
+                    <p class="post-excerpt">{{ p.excerpt | strip_html | truncate: 180 }}</p>
+                  {% endif %}
+                </div>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+
+      {% comment %}Also show posts that have only the main category (no subcategories){% endcomment %}
+      <div class="post-grid">
+        {% for p in posts_list %}
+          {% if p.categories[0] == main and p.categories.size == 1 %}
+            <article class="post-card">
+              {% if p.image and p.image.path %}
+                <a class="post-thumb" href="{{ p.url | relative_url }}">
+                  <img src="{{ p.image.path | relative_url }}" alt="{{ p.image.alt | default: p.title }}">
+                </a>
+              {% endif %}
+              <div class="post-card-body">
+                <a href="{{ p.url | relative_url }}" class="post-link">{{ p.title }}</a>
+                <div class="post-date">{{ p.date | date: "%Y-%m-%d" }}</div>
+                {% if p.description %}
+                  <p class="post-excerpt">{{ p.description | strip_html | truncate: 180 }}</p>
+                {% elsif p.excerpt %}
+                  <p class="post-excerpt">{{ p.excerpt | strip_html | truncate: 180 }}</p>
+                {% endif %}
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+    </section>
+  {% endfor %}
+{% endif %}
+
+{%- comment -%}
+If you need case-insensitive matching, replace the where_exp line above with a loop-based filter like this (example):
+
+{% raw %}
+{% assign needle = page.category_filter | downcase %}
+{% assign posts_list = "" | split: "," %}
+{% for p in site.posts %}
+  {% assign cats = p.categories | join: "," | downcase %}
+  {% if cats contains needle %}
+    {% assign posts_list = posts_list | push: p %}
+  {% endif %}
+{% endfor %}
+{% endraw %}
+
+This avoids using pipe characters inside where_exp and works with Liquid safely.
+{%- endcomment -%}
