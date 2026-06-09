@@ -353,6 +353,14 @@ a:hover { color: var(--accent2); text-decoration: underline; }
   border-top: 1px solid var(--border);
 }
 
+/* ── TOUR IFRAMES ────────────────────────────────────────────────────── */
+.tour-iframe--stats { height: 1200px; }
+.tour-iframe--map   { height: 700px; }
+@media (max-width: 640px) {
+  .tour-iframe--stats { height: 1600px; }
+  .tour-iframe--map   { height: 75vw; min-height: 320px; }
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────────────────── */
 @media (max-width: 640px) {
   .site-header .container { flex-direction: column; align-items: flex-start; gap: .5rem; }

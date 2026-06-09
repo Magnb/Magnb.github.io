@@ -11,9 +11,19 @@ Wanderung mit Isa Anfang Juni 2026
 
 <div class="full-bleed">
 <iframe 
-  src="/assets/tourviews/berge-seen-2026.html"
+  src="/assets/tourviews/berge-seen-2026_Juni-statistik.html"
   width="100%" 
-  height="1200px"
+  class="tour-iframe tour-iframe--stats"
+  style="border:none;border-radius:12px;display:block;margin:1rem 0"
+  loading="lazy">
+</iframe>
+</div>
+
+<div class="full-bleed">
+<iframe 
+  src="/assets/tourviews/berge-seen-2026_Juni.html"
+  width="100%" 
+  class="tour-iframe tour-iframe--map"
   style="border:none;border-radius:12px;display:block;margin:1rem 0"
   loading="lazy">
 </iframe>
