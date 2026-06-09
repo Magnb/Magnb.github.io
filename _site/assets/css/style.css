@@ -3,8 +3,8 @@
 
 .full-bleed {
   width: 95vw;
-  margin-left: calc(50% - 48vw);
-  margin-right: calc(50% - 48vw);
+  margin-left: calc(50% - 47.5vw);
+  margin-right: calc(50% - 47.5vw);
 }
 
 :root {
@@ -357,8 +357,12 @@ a:hover { color: var(--accent2); text-decoration: underline; }
 @media (max-width: 640px) {
   .site-header .container { flex-direction: column; align-items: flex-start; gap: .5rem; }
   .site-nav { gap: 0; }
+  .site-nav a { padding: .5rem .65rem; }
   .post-grid { grid-template-columns: 1fr; }
+  .post-grid:has(.post-card:only-child) .post-card { flex-direction: column; }
+  .post-grid:has(.post-card:only-child) .post-thumb { flex: unset; aspect-ratio: 16/9; }
   .feature-grid { grid-template-columns: 1fr; }
+  .showcase-hero { padding: 1.5rem 1.25rem; }
   #site-search-input { width: 130px; }
   #site-search-input:focus { width: 170px; }
 }

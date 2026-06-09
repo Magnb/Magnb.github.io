@@ -23,4 +23,4 @@ Wanderung mit Isa Anfang Juni 2026
 ### Goiserer Hütte
 Die Goiserer Hütte ist eine urige Berghütte mit ca. 22 Betten und herzlichen zuvorkommenden Betreiber*innen, gutem Essen und tollem Ausblick - ganz besonders geeignet um schöne Sonnenaufgänge oder -untergänge zu bestaunen!
 
-Als wir dort ankamen an einem verregneten Tag war die Hütte etwas mehr als zur Hälfte belegt und wir waren, wie es schien, die einzigen österreichischen Hütten-Gästinnen unter Deutschen, Niederländern und Amerikanern.  
+Als wir an einem ziemlich verregneten Tag ankamen, war die Hütte bereits etwas mehr als halb gefüllt (was ja immer noch nicht viel ist; wir sprechen hier von 12-14 Wander\*innen). Schnell stellten wir fest, dass wir offenbar die einzigen österreichischen Hütten-Gästinnen waren. Um uns herum hörte man vor allem deutsche, niederländische und amerikanische Stimmen – fast ein kleines internationales Bergsteiger\*innen-Treffen mitten im Salzkammergut.
